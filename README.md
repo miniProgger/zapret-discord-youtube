@@ -2,7 +2,8 @@
 
 # <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" height=28 /> <a href="https://github.com/Flowseal/">Flowseal</a><a href="https://github.com/Flowseal/zapret-discord-youtube">/zapret-discord-youtube</a> <img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" height=28 />
 
-
+Альтернатива https://github.com/bol-van/zapret-win-bundle  
+Также вы можете материально поддержать оригинального разработчика zapret [тут](https://github.com/bol-van/zapret?tab=readme-ov-file#%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0)
 </div>
 
 > [!CAUTION]
@@ -22,6 +23,7 @@
 > Но антивирусы склонны относить подобное к классам повышенного риска или хакерским инструментам.
 > В случае проблем используйте исключения или выключайте антивирус совсем.
 >
+> **Выдержка из [`readme.md`](https://github.com/bol-van/zapret-win-bundle/blob/master/readme.md#%D0%B0%D0%BD%D1%82%D0%B8%D0%B2%D0%B8%D1%80%D1%83%D1%81%D1%8B) репозитория [bol-van/zapret-win-bundle](https://github.com/bol-van/zapret-win-bundle)*
 
 > [!IMPORTANT]
 > Все бинарные файлы в папке [`bin`](./bin) взяты из [zapret-win-bundle/zapret-winws](https://github.com/bol-van/zapret-win-bundle/tree/master/zapret-winws). Вы можете это проверить с помощью хэшей/контрольных сумм. Проверяйте, что запускаете, используя сборки из интернета!
@@ -85,12 +87,15 @@
 
 - Попробуйте полную переустановку (см. раздел ниже)
 
+- См. [#765](https://github.com/Flowseal/zapret-discord-youtube/issues/765)
+
 ### Как переустновить/обновить полностью?
 - Сохраните ресурсы/данные, которые вы сами добавляли
 - Перезапустите устройство
 - `service.bat` -> `Remove Services`
 - `service.bat` -> `Run Diagnostics` (если есть ошибки - устраните их) -> в конце Y
 - Удалите папку с запретом
+- Скачайте последнюю версию [со страницы релизов](https://github.com/Flowseal/zapret-discord-youtube/releases) (`zapret-discord-youtube-...`)
 - Распакуйте в новую папку в корне диска (без спец. символов и пробелов)
 - Далее пробуйте запускать различные `general` скрипты (стратегии). Проверьте доступность интернет ресурсов - если не работают, то закрывайте программу (в панели задач иконка замочка) и пробуйте другую стратегию
 - Как найдёте рабочую стратегию, можете поставить её на автозапуск: `service.bat` -> `Install Service` -> выбираете нужную
@@ -104,6 +109,8 @@
 - Прочитайте инструкцию тут - https://github.com/bol-van/zapret-win-bundle/tree/master/windivert-hide
 
 ### Требуется цифровая подпись драйвера WinDivert (Windows 7)
+
+- Замените файлы `WinDivert.dll` и `WinDivert64.sys` в папке [`bin`](./bin) на одноименные из [zapret-win-bundle/win7](https://github.com/bol-van/zapret-win-bundle/tree/master/win7)
 
 ### При удалении с помощью [**`service.bat`**](./service.bat), WinDivert остается в службах
 
@@ -121,6 +128,18 @@ sc stop название_из_первого_шага
 sc delete название_из_первого_шага
 ```
 
+### Не работает <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" height=18 /> Discord
+
+- См. [#252](https://github.com/Flowseal/zapret-discord-youtube/discussions/252)
+
+### Не работает <img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" height=18 /> YouTube
+
+- См. [#251](https://github.com/Flowseal/zapret-discord-youtube/discussions/251)
+
+### Не нашли своей проблемы
+
+* Создайте её [тут](https://github.com/Flowseal/zapret-discord-youtube/issues)
+
 ## 🗒️Добавление адресов прочих ресурсов
 
 Список адресов для обхода можно расширить, добавляя их в:
@@ -129,5 +148,26 @@ sc delete название_из_первого_шага
 - [`ipset-all.txt`](./lists/ipset-all.txt) для IP и подсетей
 - [`ipset-exclude.txt`](./lists/ipset-exclude.txt) для исключения IP и подсетей
 
+## ⭐Поддержка проекта
+
+Вы можете поддержать проект, поставив :star: этому репозиторию (сверху справа этой страницы)
+
+Также вы можете материально поддержать оригинального разработчика zapret [тут](https://github.com/bol-van/zapret?tab=readme-ov-file#%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0)
+
+<a href="https://star-history.com/#Flowseal/zapret-discord-youtube&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Flowseal/zapret-discord-youtube&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Flowseal/zapret-discord-youtube&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Flowseal/zapret-discord-youtube&type=Date" />
+ </picture>
+</a>
+
+## ⚖️Лицензирование
+
+Проект распространяется на условиях лицензии [MIT](https://github.com/Flowseal/zapret-discord-youtube/blob/main/LICENSE.txt)
+
+## 🩷Благодарность участникам проекта
+
+[![Contributors](https://contrib.rocks/image?repo=Flowseal/zapret-discord-youtube)](https://github.com/Flowseal/zapret-discord-youtube/graphs/contributors)
 
 💖 Отдельная благодарность разработчику [zapret](https://github.com/bol-van/zapret) - [bol-van](https://github.com/bol-van)
